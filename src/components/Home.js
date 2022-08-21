@@ -1,7 +1,13 @@
 import React from "react";
 
-const Home = () => {
-  return <div>Home</div>;
+import Notes from "./Notes";
+
+const Home = (props) => {
+  return (
+    <div>
+      <Notes showAlert={props.showAlert}></Notes>
+    </div>
+  );
 };
 
 export default Home;
